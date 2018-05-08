@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jeanpaul/Code/c++/Proyecto3Analisis/src/main.cpp
+boost/program_options.hpp
+-
+iostream
+-
+iterator
+-
+

@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -Wno-long-long -pedantic -march=native -fopenmp -g   CMakeFiles/Proyecto3Analisis.dir/main.cpp.o  -o Proyecto3Analisis libanpi.a -lpython2.7 /usr/lib/x86_64-linux-gnu/libboost_program_options.so 

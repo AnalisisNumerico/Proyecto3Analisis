@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jeanpaul/Code/c++/Proyecto3Analisis/benchmarks/benchmarkMain.cpp
+boost/test/unit_test.hpp
+-
+
