@@ -1,6 +1,7 @@
 #include <boost/program_options.hpp>
 #include <iostream>
 #include <iterator>
+#include "Aplication.hpp"
 
 namespace {
   const size_t ERROR_IN_COMMAND_LINE = 1;
@@ -9,6 +10,8 @@ namespace {
 } // namespace
 
 int main(int argc, char* argv[]) {
+
+  anpi::heat<double>();
 
   try  {
 
