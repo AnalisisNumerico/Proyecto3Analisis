@@ -1,9 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/tester.dir/testAllocator.cpp.o"
-  "CMakeFiles/tester.dir/testLU.cpp.o"
   "CMakeFiles/tester.dir/testMain.cpp.o"
   "CMakeFiles/tester.dir/testMatrix.cpp.o"
-  "CMakeFiles/tester.dir/testSolver.cpp.o"
+  "CMakeFiles/tester.dir/testThomas.cpp.o"
   "tester.pdb"
   "tester"
 )

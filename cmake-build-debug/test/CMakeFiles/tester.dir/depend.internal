@@ -5,17 +5,6 @@ test/CMakeFiles/tester.dir/testAllocator.cpp.o
  ../include/Allocator.hpp
  ../include/HasType.hpp
  /home/jeanpaul/Code/c++/Proyecto3Analisis/test/testAllocator.cpp
-test/CMakeFiles/tester.dir/testLU.cpp.o
- ../include/Allocator.hpp
- ../include/AnpiConfig.hpp
- ../include/Exception.hpp
- ../include/HasType.hpp
- ../include/Intrinsics.hpp
- ../include/LUDoolittle.hpp
- ../include/Matrix.hpp
- ../include/Matrix.tpp
- ../include/bits/MatrixArithmetic.hpp
- /home/jeanpaul/Code/c++/Proyecto3Analisis/test/testLU.cpp
 test/CMakeFiles/tester.dir/testMain.cpp.o
  /home/jeanpaul/Code/c++/Proyecto3Analisis/test/testMain.cpp
 test/CMakeFiles/tester.dir/testMatrix.cpp.o
@@ -28,15 +17,14 @@ test/CMakeFiles/tester.dir/testMatrix.cpp.o
  ../include/Matrix.tpp
  ../include/bits/MatrixArithmetic.hpp
  /home/jeanpaul/Code/c++/Proyecto3Analisis/test/testMatrix.cpp
-test/CMakeFiles/tester.dir/testSolver.cpp.o
+test/CMakeFiles/tester.dir/testThomas.cpp.o
  ../include/Allocator.hpp
  ../include/AnpiConfig.hpp
  ../include/Exception.hpp
  ../include/HasType.hpp
  ../include/Intrinsics.hpp
- ../include/LUDoolittle.hpp
  ../include/Matrix.hpp
  ../include/Matrix.tpp
- ../include/Solver.hpp
+ ../include/Thomas.hpp
  ../include/bits/MatrixArithmetic.hpp
- /home/jeanpaul/Code/c++/Proyecto3Analisis/test/testSolver.cpp
+ /home/jeanpaul/Code/c++/Proyecto3Analisis/test/testThomas.cpp

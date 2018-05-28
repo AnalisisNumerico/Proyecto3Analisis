@@ -5,10 +5,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/jeanpaul/Code/c++/Proyecto3Analisis/test/testAllocator.cpp" "/home/jeanpaul/Code/c++/Proyecto3Analisis/cmake-build-debug/test/CMakeFiles/tester.dir/testAllocator.cpp.o"
-  "/home/jeanpaul/Code/c++/Proyecto3Analisis/test/testLU.cpp" "/home/jeanpaul/Code/c++/Proyecto3Analisis/cmake-build-debug/test/CMakeFiles/tester.dir/testLU.cpp.o"
   "/home/jeanpaul/Code/c++/Proyecto3Analisis/test/testMain.cpp" "/home/jeanpaul/Code/c++/Proyecto3Analisis/cmake-build-debug/test/CMakeFiles/tester.dir/testMain.cpp.o"
   "/home/jeanpaul/Code/c++/Proyecto3Analisis/test/testMatrix.cpp" "/home/jeanpaul/Code/c++/Proyecto3Analisis/cmake-build-debug/test/CMakeFiles/tester.dir/testMatrix.cpp.o"
-  "/home/jeanpaul/Code/c++/Proyecto3Analisis/test/testSolver.cpp" "/home/jeanpaul/Code/c++/Proyecto3Analisis/cmake-build-debug/test/CMakeFiles/tester.dir/testSolver.cpp.o"
+  "/home/jeanpaul/Code/c++/Proyecto3Analisis/test/testThomas.cpp" "/home/jeanpaul/Code/c++/Proyecto3Analisis/cmake-build-debug/test/CMakeFiles/tester.dir/testThomas.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

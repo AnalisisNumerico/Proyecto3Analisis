@@ -6,13 +6,24 @@
 
 namespace anpi {
 
+  /**
+   *         -------->
+   *       | * * * * * |
+   *       | * * * * * |
+   *       | * * * * * |
+   *       | * * * * * |
+   *       v * * * * * v
+   *         -------->
+   *
+   * @tparam T
+   */
   template<typename T>
   void heat() {
-    Matrix <T> plate = Matrix<T>(5, 5);//pasar por referencia
-    std::vector <T>    topBorder(5, 0);//pasar por referencia
-    std::vector <T>   leftBorder(5, 0);//pasar por referencia
-    std::vector <T>  rightBorder(5, 200);//pasar por referencia
-    std::vector <T> bottomBorder(5, 100);//pasar por referencia
+    Matrix <T> plate = Matrix<T>(10, 10);//pasar por referencia
+    std::vector <T>    topBorder(10, 0);//pasar por referencia
+    std::vector <T>   leftBorder(10, -10);//pasar por referencia
+    std::vector <T>  rightBorder(10, 200);//pasar por referencia
+    std::vector <T> bottomBorder(10, 100);//pasar por referencia
 
     T lambda = T(1.9);
 
@@ -65,7 +76,7 @@ namespace anpi {
           plate[i][j] = newT;
 
           //verificacion de condicion de parada
-          if(finish && std::abs(newT - oldT) > std::numeric_limits<T>::epsilon() * 1000) {
+          if(finish && std::abs(newT - oldT) > (std::numeric_limits<T>::epsilon() * 1000)) {
             finish = false;
           }
         }
@@ -90,6 +101,8 @@ namespace anpi {
 
     Matrix <T> xFlowMatrix = Matrix<T>(5, 5);//pasar por referencia
     Matrix <T> yFlowMatrix = Matrix<T>(5, 5);//pasar por referencia
+
+    T k = 2.37; //conductividad termica del aluminio
 
     for(int i = 0; i < plate.rows(); i++) {
       for(int j = 0; j < plate.cols(); j++) {
@@ -126,8 +139,8 @@ namespace anpi {
           bottom = plate[i + 1][j];
         }
 
-        xFlowMatrix[i][j] = (left - right) / 2;
-        yFlowMatrix[i][j] = (top - bottom) / 2;
+        xFlowMatrix[i][j] = -k * ((right - left) / 2);
+        yFlowMatrix[i][j] = -k * ((bottom - top) / 2);
 
       }
     }

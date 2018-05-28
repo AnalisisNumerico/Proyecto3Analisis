@@ -69,8 +69,8 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/home/jeanpaul/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/181.4668.70/bin/cmake/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -163,33 +163,6 @@ testAllocator.cpp.s:
 	cd /home/jeanpaul/Code/c++/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f test/CMakeFiles/tester.dir/build.make test/CMakeFiles/tester.dir/testAllocator.cpp.s
 .PHONY : testAllocator.cpp.s
 
-testLU.o: testLU.cpp.o
-
-.PHONY : testLU.o
-
-# target to build an object file
-testLU.cpp.o:
-	cd /home/jeanpaul/Code/c++/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f test/CMakeFiles/tester.dir/build.make test/CMakeFiles/tester.dir/testLU.cpp.o
-.PHONY : testLU.cpp.o
-
-testLU.i: testLU.cpp.i
-
-.PHONY : testLU.i
-
-# target to preprocess a source file
-testLU.cpp.i:
-	cd /home/jeanpaul/Code/c++/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f test/CMakeFiles/tester.dir/build.make test/CMakeFiles/tester.dir/testLU.cpp.i
-.PHONY : testLU.cpp.i
-
-testLU.s: testLU.cpp.s
-
-.PHONY : testLU.s
-
-# target to generate assembly for a file
-testLU.cpp.s:
-	cd /home/jeanpaul/Code/c++/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f test/CMakeFiles/tester.dir/build.make test/CMakeFiles/tester.dir/testLU.cpp.s
-.PHONY : testLU.cpp.s
-
 testMain.o: testMain.cpp.o
 
 .PHONY : testMain.o
@@ -244,32 +217,32 @@ testMatrix.cpp.s:
 	cd /home/jeanpaul/Code/c++/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f test/CMakeFiles/tester.dir/build.make test/CMakeFiles/tester.dir/testMatrix.cpp.s
 .PHONY : testMatrix.cpp.s
 
-testSolver.o: testSolver.cpp.o
+testThomas.o: testThomas.cpp.o
 
-.PHONY : testSolver.o
+.PHONY : testThomas.o
 
 # target to build an object file
-testSolver.cpp.o:
-	cd /home/jeanpaul/Code/c++/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f test/CMakeFiles/tester.dir/build.make test/CMakeFiles/tester.dir/testSolver.cpp.o
-.PHONY : testSolver.cpp.o
+testThomas.cpp.o:
+	cd /home/jeanpaul/Code/c++/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f test/CMakeFiles/tester.dir/build.make test/CMakeFiles/tester.dir/testThomas.cpp.o
+.PHONY : testThomas.cpp.o
 
-testSolver.i: testSolver.cpp.i
+testThomas.i: testThomas.cpp.i
 
-.PHONY : testSolver.i
+.PHONY : testThomas.i
 
 # target to preprocess a source file
-testSolver.cpp.i:
-	cd /home/jeanpaul/Code/c++/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f test/CMakeFiles/tester.dir/build.make test/CMakeFiles/tester.dir/testSolver.cpp.i
-.PHONY : testSolver.cpp.i
+testThomas.cpp.i:
+	cd /home/jeanpaul/Code/c++/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f test/CMakeFiles/tester.dir/build.make test/CMakeFiles/tester.dir/testThomas.cpp.i
+.PHONY : testThomas.cpp.i
 
-testSolver.s: testSolver.cpp.s
+testThomas.s: testThomas.cpp.s
 
-.PHONY : testSolver.s
+.PHONY : testThomas.s
 
 # target to generate assembly for a file
-testSolver.cpp.s:
-	cd /home/jeanpaul/Code/c++/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f test/CMakeFiles/tester.dir/build.make test/CMakeFiles/tester.dir/testSolver.cpp.s
-.PHONY : testSolver.cpp.s
+testThomas.cpp.s:
+	cd /home/jeanpaul/Code/c++/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f test/CMakeFiles/tester.dir/build.make test/CMakeFiles/tester.dir/testThomas.cpp.s
+.PHONY : testThomas.cpp.s
 
 # Help Target
 help:
@@ -284,18 +257,15 @@ help:
 	@echo "... testAllocator.o"
 	@echo "... testAllocator.i"
 	@echo "... testAllocator.s"
-	@echo "... testLU.o"
-	@echo "... testLU.i"
-	@echo "... testLU.s"
 	@echo "... testMain.o"
 	@echo "... testMain.i"
 	@echo "... testMain.s"
 	@echo "... testMatrix.o"
 	@echo "... testMatrix.i"
 	@echo "... testMatrix.s"
-	@echo "... testSolver.o"
-	@echo "... testSolver.i"
-	@echo "... testSolver.s"
+	@echo "... testThomas.o"
+	@echo "... testThomas.i"
+	@echo "... testThomas.s"
 .PHONY : help
 
 

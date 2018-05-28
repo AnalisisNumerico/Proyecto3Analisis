@@ -36,20 +36,6 @@ altivec.h
 spe.h
 -
 
-../include/LUDoolittle.hpp
-cmath
--
-limits
--
-functional
--
-algorithm
--
-Exception.hpp
-../include/Exception.hpp
-Matrix.hpp
-../include/Matrix.hpp
-
 ../include/Matrix.hpp
 cstddef
 -
@@ -78,9 +64,7 @@ bits/MatrixArithmetic.hpp
 Exception.hpp
 ../include/Exception.hpp
 
-../include/Solver.hpp
-LUDoolittle.hpp
-../include/LUDoolittle.hpp
+../include/Thomas.hpp
 
 ../include/bits/MatrixArithmetic.hpp
 Intrinsics.hpp
@@ -96,16 +80,6 @@ vector
 boost/test/unit_test.hpp
 -
 Allocator.hpp
--
-
-/home/jeanpaul/Code/c++/Proyecto3Analisis/test/testLU.cpp
-boost/test/unit_test.hpp
--
-LUDoolittle.hpp
-/home/jeanpaul/Code/c++/Proyecto3Analisis/test/LUDoolittle.hpp
-iostream
--
-complex
 -
 
 /home/jeanpaul/Code/c++/Proyecto3Analisis/test/testMain.cpp
@@ -134,19 +108,15 @@ bits/MatrixArithmetic.hpp
 Exception.hpp
 /home/jeanpaul/Code/c++/Proyecto3Analisis/test/Exception.hpp
 
-/home/jeanpaul/Code/c++/Proyecto3Analisis/test/testSolver.cpp
+/home/jeanpaul/Code/c++/Proyecto3Analisis/test/testThomas.cpp
 boost/test/unit_test.hpp
 -
+Matrix.hpp
+-
+Thomas.hpp
+/home/jeanpaul/Code/c++/Proyecto3Analisis/test/Thomas.hpp
 iostream
 -
-exception
+complex
 -
-cstdlib
--
-functional
--
-cmath
--
-Solver.hpp
-/home/jeanpaul/Code/c++/Proyecto3Analisis/test/Solver.hpp
 

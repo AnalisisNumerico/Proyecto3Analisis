@@ -68,6 +68,8 @@ bits/MatrixArithmetic.hpp
 Exception.hpp
 ../include/Exception.hpp
 
+../include/Spline.hpp
+
 ../include/bits/MatrixArithmetic.hpp
 Intrinsics.hpp
 ../include/bits/Intrinsics.hpp
@@ -87,4 +89,6 @@ iterator
 -
 Aplication.hpp
 /home/jeanpaul/Code/c++/Proyecto3Analisis/src/Aplication.hpp
+Spline.hpp
+/home/jeanpaul/Code/c++/Proyecto3Analisis/src/Spline.hpp
 

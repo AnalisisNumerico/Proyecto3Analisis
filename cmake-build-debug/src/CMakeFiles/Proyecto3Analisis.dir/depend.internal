@@ -10,5 +10,6 @@ src/CMakeFiles/Proyecto3Analisis.dir/main.cpp.o
  ../include/Intrinsics.hpp
  ../include/Matrix.hpp
  ../include/Matrix.tpp
+ ../include/Spline.hpp
  ../include/bits/MatrixArithmetic.hpp
  /home/jeanpaul/Code/c++/Proyecto3Analisis/src/main.cpp

@@ -2,6 +2,8 @@
 #include <iostream>
 #include <iterator>
 #include "Aplication.hpp"
+#include "Spline.hpp"
+
 
 namespace {
   const size_t ERROR_IN_COMMAND_LINE = 1;
@@ -12,6 +14,10 @@ namespace {
 int main(int argc, char* argv[]) {
 
   anpi::heat<double>();
+
+  int plateBorderSize = 3;
+  std::vector<float> temperatures = {50,1000,0,100,2000,28};
+  anpi::interpolate<float>(plateBorderSize, temperatures);
 
   try  {
 
