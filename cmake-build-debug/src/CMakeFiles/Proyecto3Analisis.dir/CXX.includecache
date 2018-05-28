@@ -69,6 +69,10 @@ Exception.hpp
 ../include/Exception.hpp
 
 ../include/Spline.hpp
+Thomas.hpp
+../include/Thomas.hpp
+
+../include/Thomas.hpp
 
 ../include/bits/MatrixArithmetic.hpp
 Intrinsics.hpp

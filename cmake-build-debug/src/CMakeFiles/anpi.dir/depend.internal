@@ -11,5 +11,6 @@ src/CMakeFiles/anpi.dir/main.cpp.o
  ../include/Matrix.hpp
  ../include/Matrix.tpp
  ../include/Spline.hpp
+ ../include/Thomas.hpp
  ../include/bits/MatrixArithmetic.hpp
  /home/jeanpaul/Code/c++/Proyecto3Analisis/src/main.cpp

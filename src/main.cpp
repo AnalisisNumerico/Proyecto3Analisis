@@ -13,11 +13,20 @@ namespace {
 
 int main(int argc, char* argv[]) {
 
-  anpi::heat<double>();
+   anpi::heat<double>();
 
-  int plateBorderSize = 3;
+  int plateBorderSize = 100;
   std::vector<float> temperatures = {50,1000,0,100,2000,28};
-  anpi::interpolate<float>(plateBorderSize, temperatures);
+  std::vector<float> border;
+  anpi::spline<float>(plateBorderSize, temperatures, border);
+
+  std::cout << std::endl;
+
+  for(int i = 0; i < border.size(); i++) {
+    std::cout << border[i] << " ";
+  }
+
+  std::cout << std::endl;
 
   try  {
 
