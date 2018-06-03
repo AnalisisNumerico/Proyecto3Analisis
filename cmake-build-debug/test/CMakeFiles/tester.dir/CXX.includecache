@@ -92,27 +92,27 @@ iostream
 vector
 -
 
-/home/jeanpaul/Code/c++/Proyecto3Analisis/test/testAllocator.cpp
+/home/ger534/Proyecto3Analisis/test/testAllocator.cpp
 boost/test/unit_test.hpp
 -
 Allocator.hpp
 -
 
-/home/jeanpaul/Code/c++/Proyecto3Analisis/test/testLU.cpp
+/home/ger534/Proyecto3Analisis/test/testLU.cpp
 boost/test/unit_test.hpp
 -
 LUDoolittle.hpp
-/home/jeanpaul/Code/c++/Proyecto3Analisis/test/LUDoolittle.hpp
+/home/ger534/Proyecto3Analisis/test/LUDoolittle.hpp
 iostream
 -
 complex
 -
 
-/home/jeanpaul/Code/c++/Proyecto3Analisis/test/testMain.cpp
+/home/ger534/Proyecto3Analisis/test/testMain.cpp
 boost/test/unit_test.hpp
 -
 
-/home/jeanpaul/Code/c++/Proyecto3Analisis/test/testMatrix.cpp
+/home/ger534/Proyecto3Analisis/test/testMatrix.cpp
 boost/test/unit_test.hpp
 -
 iostream
@@ -124,17 +124,17 @@ cstdlib
 complex
 -
 Matrix.hpp
-/home/jeanpaul/Code/c++/Proyecto3Analisis/test/Matrix.hpp
+/home/ger534/Proyecto3Analisis/test/Matrix.hpp
 Allocator.hpp
-/home/jeanpaul/Code/c++/Proyecto3Analisis/test/Allocator.hpp
+/home/ger534/Proyecto3Analisis/test/Allocator.hpp
 iostream
 -
 bits/MatrixArithmetic.hpp
 -
 Exception.hpp
-/home/jeanpaul/Code/c++/Proyecto3Analisis/test/Exception.hpp
+/home/ger534/Proyecto3Analisis/test/Exception.hpp
 
-/home/jeanpaul/Code/c++/Proyecto3Analisis/test/testSolver.cpp
+/home/ger534/Proyecto3Analisis/test/testSolver.cpp
 boost/test/unit_test.hpp
 -
 iostream
@@ -148,5 +148,5 @@ functional
 cmath
 -
 Solver.hpp
-/home/jeanpaul/Code/c++/Proyecto3Analisis/test/Solver.hpp
+/home/ger534/Proyecto3Analisis/test/Solver.hpp
 

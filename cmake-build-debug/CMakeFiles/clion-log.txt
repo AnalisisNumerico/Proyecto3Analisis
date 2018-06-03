@@ -1,4 +1,11 @@
-/home/jeanpaul/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/181.4668.70/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/jeanpaul/Code/c++/Proyecto3Analisis
+/home/ger534/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/173.4674.29/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/ger534/Proyecto3Analisis
+-- The CXX compiler identification is GNU 7.2.0
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
 -- Boost version: 1.62.0
 -- Found the following Boost libraries:
 --   system
@@ -6,11 +13,13 @@
 -- Boost version: 1.62.0
 -- Found the following Boost libraries:
 --   program_options
+-- Found OpenMP_CXX: -fopenmp (found version "4.5") 
 -- Boost version: 1.62.0
 -- Found the following Boost libraries:
 --   system
 --   filesystem
 --   unit_test_framework
+-- Found OpenMP_CXX: -fopenmp  
 -- Boost version: 1.62.0
 -- Found the following Boost libraries:
 --   system
@@ -18,4 +27,4 @@
 --   unit_test_framework
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/jeanpaul/Code/c++/Proyecto3Analisis/cmake-build-debug
+-- Build files have been written to: /home/ger534/Proyecto3Analisis/cmake-build-debug

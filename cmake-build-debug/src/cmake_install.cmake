@@ -1,4 +1,4 @@
-# Install script for directory: /home/jeanpaul/Code/c++/Proyecto3Analisis/src
+# Install script for directory: /home/ger534/Proyecto3Analisis/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

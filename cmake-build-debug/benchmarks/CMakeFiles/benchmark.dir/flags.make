@@ -6,5 +6,5 @@ CXX_FLAGS =  -Wall -Wno-long-long -pedantic -march=native -fopenmp -g   -std=gnu
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/jeanpaul/Code/c++/Proyecto3Analisis/include 
+CXX_INCLUDES = -I/home/ger534/Proyecto3Analisis/include 
 

@@ -4,7 +4,7 @@
 test/CMakeFiles/tester.dir/testAllocator.cpp.o
  ../include/Allocator.hpp
  ../include/HasType.hpp
- /home/jeanpaul/Code/c++/Proyecto3Analisis/test/testAllocator.cpp
+ /home/ger534/Proyecto3Analisis/test/testAllocator.cpp
 test/CMakeFiles/tester.dir/testLU.cpp.o
  ../include/Allocator.hpp
  ../include/AnpiConfig.hpp
@@ -15,9 +15,9 @@ test/CMakeFiles/tester.dir/testLU.cpp.o
  ../include/Matrix.hpp
  ../include/Matrix.tpp
  ../include/bits/MatrixArithmetic.hpp
- /home/jeanpaul/Code/c++/Proyecto3Analisis/test/testLU.cpp
+ /home/ger534/Proyecto3Analisis/test/testLU.cpp
 test/CMakeFiles/tester.dir/testMain.cpp.o
- /home/jeanpaul/Code/c++/Proyecto3Analisis/test/testMain.cpp
+ /home/ger534/Proyecto3Analisis/test/testMain.cpp
 test/CMakeFiles/tester.dir/testMatrix.cpp.o
  ../include/Allocator.hpp
  ../include/AnpiConfig.hpp
@@ -27,7 +27,7 @@ test/CMakeFiles/tester.dir/testMatrix.cpp.o
  ../include/Matrix.hpp
  ../include/Matrix.tpp
  ../include/bits/MatrixArithmetic.hpp
- /home/jeanpaul/Code/c++/Proyecto3Analisis/test/testMatrix.cpp
+ /home/ger534/Proyecto3Analisis/test/testMatrix.cpp
 test/CMakeFiles/tester.dir/testSolver.cpp.o
  ../include/Allocator.hpp
  ../include/AnpiConfig.hpp
@@ -39,4 +39,4 @@ test/CMakeFiles/tester.dir/testSolver.cpp.o
  ../include/Matrix.tpp
  ../include/Solver.hpp
  ../include/bits/MatrixArithmetic.hpp
- /home/jeanpaul/Code/c++/Proyecto3Analisis/test/testSolver.cpp
+ /home/ger534/Proyecto3Analisis/test/testSolver.cpp

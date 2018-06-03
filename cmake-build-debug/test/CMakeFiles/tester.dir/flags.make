@@ -6,5 +6,5 @@ CXX_FLAGS =  -Wall -Wno-long-long -pedantic -fopenmp -g   -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/jeanpaul/Code/c++/Proyecto3Analisis/include 
+CXX_INCLUDES = -I/home/ger534/Proyecto3Analisis/include 
 

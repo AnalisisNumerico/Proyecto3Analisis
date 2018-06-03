@@ -39,38 +39,27 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/bin/cmake
+CMAKE_COMMAND = /home/ger534/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/173.4674.29/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /usr/bin/cmake -E remove -f
+RM = /home/ger534/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/173.4674.29/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jeanpaul/Code/c++/Proyecto3Analisis
+CMAKE_SOURCE_DIR = /home/ger534/Proyecto3Analisis
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jeanpaul/Code/c++/Proyecto3Analisis/cmake-build-debug
+CMAKE_BINARY_DIR = /home/ger534/Proyecto3Analisis/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/home/jeanpaul/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/181.4668.70/bin/cmake/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/home/ger534/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/173.4674.29/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -81,7 +70,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+	/home/ger534/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/173.4674.29/bin/cmake/bin/ctest --force-new-ctest-process $(ARGS)
 .PHONY : test
 
 # Special rule for the target test
@@ -89,16 +78,27 @@ test/fast: test
 
 .PHONY : test/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/home/ger534/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/173.4674.29/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	cd /home/jeanpaul/Code/c++/Proyecto3Analisis/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/jeanpaul/Code/c++/Proyecto3Analisis/cmake-build-debug/CMakeFiles /home/jeanpaul/Code/c++/Proyecto3Analisis/cmake-build-debug/test/CMakeFiles/progress.marks
-	cd /home/jeanpaul/Code/c++/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 test/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jeanpaul/Code/c++/Proyecto3Analisis/cmake-build-debug/CMakeFiles 0
+	cd /home/ger534/Proyecto3Analisis/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/ger534/Proyecto3Analisis/cmake-build-debug/CMakeFiles /home/ger534/Proyecto3Analisis/cmake-build-debug/test/CMakeFiles/progress.marks
+	cd /home/ger534/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 test/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ger534/Proyecto3Analisis/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/jeanpaul/Code/c++/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 test/clean
+	cd /home/ger534/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 test/clean
 .PHONY : clean
 
 # The main clean target
@@ -108,22 +108,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/jeanpaul/Code/c++/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 test/preinstall
+	cd /home/ger534/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 test/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/jeanpaul/Code/c++/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 test/preinstall
+	cd /home/ger534/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 test/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/jeanpaul/Code/c++/Proyecto3Analisis/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ger534/Proyecto3Analisis/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 test/CMakeFiles/tester.dir/rule:
-	cd /home/jeanpaul/Code/c++/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/tester.dir/rule
+	cd /home/ger534/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/tester.dir/rule
 .PHONY : test/CMakeFiles/tester.dir/rule
 
 # Convenience name for target.
@@ -133,7 +133,7 @@ tester: test/CMakeFiles/tester.dir/rule
 
 # fast build rule for target.
 tester/fast:
-	cd /home/jeanpaul/Code/c++/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f test/CMakeFiles/tester.dir/build.make test/CMakeFiles/tester.dir/build
+	cd /home/ger534/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f test/CMakeFiles/tester.dir/build.make test/CMakeFiles/tester.dir/build
 .PHONY : tester/fast
 
 testAllocator.o: testAllocator.cpp.o
@@ -142,7 +142,7 @@ testAllocator.o: testAllocator.cpp.o
 
 # target to build an object file
 testAllocator.cpp.o:
-	cd /home/jeanpaul/Code/c++/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f test/CMakeFiles/tester.dir/build.make test/CMakeFiles/tester.dir/testAllocator.cpp.o
+	cd /home/ger534/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f test/CMakeFiles/tester.dir/build.make test/CMakeFiles/tester.dir/testAllocator.cpp.o
 .PHONY : testAllocator.cpp.o
 
 testAllocator.i: testAllocator.cpp.i
@@ -151,7 +151,7 @@ testAllocator.i: testAllocator.cpp.i
 
 # target to preprocess a source file
 testAllocator.cpp.i:
-	cd /home/jeanpaul/Code/c++/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f test/CMakeFiles/tester.dir/build.make test/CMakeFiles/tester.dir/testAllocator.cpp.i
+	cd /home/ger534/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f test/CMakeFiles/tester.dir/build.make test/CMakeFiles/tester.dir/testAllocator.cpp.i
 .PHONY : testAllocator.cpp.i
 
 testAllocator.s: testAllocator.cpp.s
@@ -160,7 +160,7 @@ testAllocator.s: testAllocator.cpp.s
 
 # target to generate assembly for a file
 testAllocator.cpp.s:
-	cd /home/jeanpaul/Code/c++/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f test/CMakeFiles/tester.dir/build.make test/CMakeFiles/tester.dir/testAllocator.cpp.s
+	cd /home/ger534/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f test/CMakeFiles/tester.dir/build.make test/CMakeFiles/tester.dir/testAllocator.cpp.s
 .PHONY : testAllocator.cpp.s
 
 testLU.o: testLU.cpp.o
@@ -169,7 +169,7 @@ testLU.o: testLU.cpp.o
 
 # target to build an object file
 testLU.cpp.o:
-	cd /home/jeanpaul/Code/c++/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f test/CMakeFiles/tester.dir/build.make test/CMakeFiles/tester.dir/testLU.cpp.o
+	cd /home/ger534/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f test/CMakeFiles/tester.dir/build.make test/CMakeFiles/tester.dir/testLU.cpp.o
 .PHONY : testLU.cpp.o
 
 testLU.i: testLU.cpp.i
@@ -178,7 +178,7 @@ testLU.i: testLU.cpp.i
 
 # target to preprocess a source file
 testLU.cpp.i:
-	cd /home/jeanpaul/Code/c++/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f test/CMakeFiles/tester.dir/build.make test/CMakeFiles/tester.dir/testLU.cpp.i
+	cd /home/ger534/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f test/CMakeFiles/tester.dir/build.make test/CMakeFiles/tester.dir/testLU.cpp.i
 .PHONY : testLU.cpp.i
 
 testLU.s: testLU.cpp.s
@@ -187,7 +187,7 @@ testLU.s: testLU.cpp.s
 
 # target to generate assembly for a file
 testLU.cpp.s:
-	cd /home/jeanpaul/Code/c++/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f test/CMakeFiles/tester.dir/build.make test/CMakeFiles/tester.dir/testLU.cpp.s
+	cd /home/ger534/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f test/CMakeFiles/tester.dir/build.make test/CMakeFiles/tester.dir/testLU.cpp.s
 .PHONY : testLU.cpp.s
 
 testMain.o: testMain.cpp.o
@@ -196,7 +196,7 @@ testMain.o: testMain.cpp.o
 
 # target to build an object file
 testMain.cpp.o:
-	cd /home/jeanpaul/Code/c++/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f test/CMakeFiles/tester.dir/build.make test/CMakeFiles/tester.dir/testMain.cpp.o
+	cd /home/ger534/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f test/CMakeFiles/tester.dir/build.make test/CMakeFiles/tester.dir/testMain.cpp.o
 .PHONY : testMain.cpp.o
 
 testMain.i: testMain.cpp.i
@@ -205,7 +205,7 @@ testMain.i: testMain.cpp.i
 
 # target to preprocess a source file
 testMain.cpp.i:
-	cd /home/jeanpaul/Code/c++/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f test/CMakeFiles/tester.dir/build.make test/CMakeFiles/tester.dir/testMain.cpp.i
+	cd /home/ger534/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f test/CMakeFiles/tester.dir/build.make test/CMakeFiles/tester.dir/testMain.cpp.i
 .PHONY : testMain.cpp.i
 
 testMain.s: testMain.cpp.s
@@ -214,7 +214,7 @@ testMain.s: testMain.cpp.s
 
 # target to generate assembly for a file
 testMain.cpp.s:
-	cd /home/jeanpaul/Code/c++/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f test/CMakeFiles/tester.dir/build.make test/CMakeFiles/tester.dir/testMain.cpp.s
+	cd /home/ger534/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f test/CMakeFiles/tester.dir/build.make test/CMakeFiles/tester.dir/testMain.cpp.s
 .PHONY : testMain.cpp.s
 
 testMatrix.o: testMatrix.cpp.o
@@ -223,7 +223,7 @@ testMatrix.o: testMatrix.cpp.o
 
 # target to build an object file
 testMatrix.cpp.o:
-	cd /home/jeanpaul/Code/c++/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f test/CMakeFiles/tester.dir/build.make test/CMakeFiles/tester.dir/testMatrix.cpp.o
+	cd /home/ger534/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f test/CMakeFiles/tester.dir/build.make test/CMakeFiles/tester.dir/testMatrix.cpp.o
 .PHONY : testMatrix.cpp.o
 
 testMatrix.i: testMatrix.cpp.i
@@ -232,7 +232,7 @@ testMatrix.i: testMatrix.cpp.i
 
 # target to preprocess a source file
 testMatrix.cpp.i:
-	cd /home/jeanpaul/Code/c++/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f test/CMakeFiles/tester.dir/build.make test/CMakeFiles/tester.dir/testMatrix.cpp.i
+	cd /home/ger534/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f test/CMakeFiles/tester.dir/build.make test/CMakeFiles/tester.dir/testMatrix.cpp.i
 .PHONY : testMatrix.cpp.i
 
 testMatrix.s: testMatrix.cpp.s
@@ -241,7 +241,7 @@ testMatrix.s: testMatrix.cpp.s
 
 # target to generate assembly for a file
 testMatrix.cpp.s:
-	cd /home/jeanpaul/Code/c++/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f test/CMakeFiles/tester.dir/build.make test/CMakeFiles/tester.dir/testMatrix.cpp.s
+	cd /home/ger534/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f test/CMakeFiles/tester.dir/build.make test/CMakeFiles/tester.dir/testMatrix.cpp.s
 .PHONY : testMatrix.cpp.s
 
 testSolver.o: testSolver.cpp.o
@@ -250,7 +250,7 @@ testSolver.o: testSolver.cpp.o
 
 # target to build an object file
 testSolver.cpp.o:
-	cd /home/jeanpaul/Code/c++/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f test/CMakeFiles/tester.dir/build.make test/CMakeFiles/tester.dir/testSolver.cpp.o
+	cd /home/ger534/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f test/CMakeFiles/tester.dir/build.make test/CMakeFiles/tester.dir/testSolver.cpp.o
 .PHONY : testSolver.cpp.o
 
 testSolver.i: testSolver.cpp.i
@@ -259,7 +259,7 @@ testSolver.i: testSolver.cpp.i
 
 # target to preprocess a source file
 testSolver.cpp.i:
-	cd /home/jeanpaul/Code/c++/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f test/CMakeFiles/tester.dir/build.make test/CMakeFiles/tester.dir/testSolver.cpp.i
+	cd /home/ger534/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f test/CMakeFiles/tester.dir/build.make test/CMakeFiles/tester.dir/testSolver.cpp.i
 .PHONY : testSolver.cpp.i
 
 testSolver.s: testSolver.cpp.s
@@ -268,7 +268,7 @@ testSolver.s: testSolver.cpp.s
 
 # target to generate assembly for a file
 testSolver.cpp.s:
-	cd /home/jeanpaul/Code/c++/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f test/CMakeFiles/tester.dir/build.make test/CMakeFiles/tester.dir/testSolver.cpp.s
+	cd /home/ger534/Proyecto3Analisis/cmake-build-debug && $(MAKE) -f test/CMakeFiles/tester.dir/build.make test/CMakeFiles/tester.dir/testSolver.cpp.s
 .PHONY : testSolver.cpp.s
 
 # Help Target
@@ -277,10 +277,10 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... tester"
 	@echo "... test"
+	@echo "... rebuild_cache"
+	@echo "... tester"
 	@echo "... testAllocator.o"
 	@echo "... testAllocator.i"
 	@echo "... testAllocator.s"
@@ -307,6 +307,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/jeanpaul/Code/c++/Proyecto3Analisis/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ger534/Proyecto3Analisis/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

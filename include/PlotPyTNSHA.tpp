@@ -19,15 +19,10 @@ namespace anpi {
   }
 
   template <typename T>
-  void  PlotTNSHA<T>::plot(std::vector<T>& dataPathx,std::vector<T>& dataPathy,
-                            std::vector<T>& datax,std::vector<T>& datay,
-                               std::vector<T>& datau,std::vector<T>& datav,
-                                std::vector<T>& datap,std::vector<T>& dataq) {
+  void  PlotTNSHA<T>::quiver(std::vector<T>& datax,std::vector<T>& datay,std::vector<T>& datau,std::vector<T>& datav,std::vector<T>& datap,std::vector<T>& dataq) {
 
 
     // Convert the vectors of data into Python strings
-    std::string pxstr  = "PathX = [";
-    std::string pystr  = "PathY = [";
     std::string xstr  = "X = [";
     std::string ystr  = "Y = [";
     std::string ustr  = "U = [";
@@ -62,16 +57,7 @@ namespace anpi {
          qstr.append(std::to_string(dataq[i])   + c);
 
       }
-        c=',';
-      for(size_t i = 0; i < dataPathx.size(); i++) {
-                     if (i == dataPathx.size()-1) {
-                       c=']';
-                     }
-               pxstr.append(std::to_string(dataPathx[i])   + c);
-               pystr.append(std::to_string(dataPathy[i])   + c);
-
-            }
-
+    c=',';
 
     PyRun_SimpleString(xstr.c_str());
     PyRun_SimpleString(ystr.c_str());
@@ -79,15 +65,35 @@ namespace anpi {
     PyRun_SimpleString(vstr.c_str());
     PyRun_SimpleString(pstr.c_str());
     PyRun_SimpleString(qstr.c_str());
-    PyRun_SimpleString(pxstr.c_str());
-    PyRun_SimpleString(pystr.c_str());
-
-    PyRun_SimpleString("fig, ax = plt.subplots()");
     PyRun_SimpleString("M = np.hypot(U, V)");
     PyRun_SimpleString("ax.quiver(X, Y, U, V,M)");
     PyRun_SimpleString("plt.plot(P,Q,'ro')");
-    PyRun_SimpleString("plt.plot(PathX, PathY, linewidth=5, color='black')");
 }
+  template <typename T>
+  void PlotTNSHA<T>::imgshow(anpi::Matrix<T>& image){
+        std::string xstr  = "x = [[";
+        std::string c=",";
+        for(size_t i = 0; i < image.rows(); i++) {
+            for(size_t j = 0; j < image.cols(); j++) {
+                if (j == image.cols()-1 &&  i != image.rows()-1){
+                  c="],[";
+                }
+                if (j == image.cols()-1 && i == image.rows()-1){
+                                  c="]]";
+                }
+               xstr.append(std::to_string(image[i][j]) + c);
+               c=",";
+            }
+        }
+        std::cout << xstr << std::endl;
+        PyRun_SimpleString(xstr.c_str());
+        PyRun_SimpleString("fig, ax = plt.subplots(nrows=1, sharex=True, figsize=(10, 10))");
+        PyRun_SimpleString("ax.set_title('placa')");
+        ///TODO origin can be important, see it with JP
+        PyRun_SimpleString("ax.imshow(x, origin='upper', interpolation='bilinear')");
+        //PyRun_SimpleString("plt.plot(P,Q,'ro')");
+
+  }
 
   template <typename T>
   void PlotTNSHA<T>::show(){
