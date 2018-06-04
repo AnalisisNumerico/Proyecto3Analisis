@@ -3,6 +3,7 @@
 #include <iterator>
 #include "Aplication.hpp"
 #include "Spline.hpp"
+#include "LinearIncrement.hpp"
 
 
 namespace {
@@ -13,8 +14,34 @@ namespace {
 
 int main(int argc, char* argv[]) {
 
-   anpi::heat<double>();
+/*
+  float initial =   50;
+  float final   = -100;
+  int size = 66;
+  std::vector<float> values;
 
+  anpi::linearIncrement<float>(initial, final, size, values);
+
+*/
+
+/*
+  float lambda = float(1);
+
+  std::vector <float>    topBorder(10, 0);//pasar por referencia
+  std::vector <float>   leftBorder(10, -10);//pasar por referencia
+  std::vector <float>  rightBorder(10, 200);//pasar por referencia
+  std::vector <float> bottomBorder(10, 100);//pasar por referencia
+
+  bool top    = false;
+  bool left   = true;
+  bool right  = true;
+  bool bottom = false;
+
+  anpi::Matrix<float> plate;
+
+  anpi::heat<float>(lambda, topBorder, leftBorder, rightBorder, bottomBorder, top, left, right, bottom, plate);
+*/
+ /*
   int plateBorderSize = 100;
   std::vector<float> temperatures = {50,1000,0,100,2000,28};
   std::vector<float> border;
@@ -27,6 +54,7 @@ int main(int argc, char* argv[]) {
   }
 
   std::cout << std::endl;
+*/
 
   try  {
 

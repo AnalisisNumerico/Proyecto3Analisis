@@ -40,6 +40,8 @@ altivec.h
 spe.h
 -
 
+../include/LinearIncrement.hpp
+
 ../include/Matrix.hpp
 cstddef
 -
@@ -95,4 +97,6 @@ Aplication.hpp
 /home/jeanpaul/Code/c++/Proyecto3Analisis/src/Aplication.hpp
 Spline.hpp
 /home/jeanpaul/Code/c++/Proyecto3Analisis/src/Spline.hpp
+LinearIncrement.hpp
+/home/jeanpaul/Code/c++/Proyecto3Analisis/src/LinearIncrement.hpp
 
