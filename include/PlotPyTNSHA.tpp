@@ -16,6 +16,7 @@ namespace anpi {
     Py_Initialize();
     PyRun_SimpleString("import matplotlib.pyplot as plt");
     PyRun_SimpleString("import numpy as np");
+    PyRun_SimpleString("from mpl_toolkits.axes_grid1 import make_axes_locatable");
   }
 
   template <typename T>
@@ -89,9 +90,12 @@ namespace anpi {
         PyRun_SimpleString(xstr.c_str());
         PyRun_SimpleString("fig, ax = plt.subplots(nrows=1, sharex=True, figsize=(10, 10))");
         PyRun_SimpleString("ax.set_title('placa')");
-        ///TODO origin can be important, see it with JP
-        PyRun_SimpleString("ax.imshow(x, origin='upper', interpolation='bilinear')");
-        //PyRun_SimpleString("plt.plot(P,Q,'ro')");
+        PyRun_SimpleString("im = ax.imshow(x, origin='upper', interpolation='bilinear')");
+
+        PyRun_SimpleString("divider = make_axes_locatable(ax)");
+        PyRun_SimpleString("cax = divider.append_axes("right", size="5%", pad=0.05)");
+        PyRun_SimpleString("plt.colorbar(im, cax=cax)");
+
 
   }
 
