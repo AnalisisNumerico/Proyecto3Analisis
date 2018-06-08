@@ -52,7 +52,7 @@ namespace anpi {
         /**
          * Plot the function quiver
          */
-        void quiver(std::vector<T>& datax,std::vector<T>& datay,std::vector<T>& datau,std::vector<T>& datav,std::vector<T>& datap,std::vector<T>& dataq);
+        void quiver(std::vector<T>& datax,std::vector<T>& datay,std::vector<T>& datau,std::vector<T>& datav);
 
         /**
          * Plot a image using interpolation
