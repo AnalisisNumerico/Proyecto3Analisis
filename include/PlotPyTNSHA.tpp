@@ -79,7 +79,7 @@ namespace anpi {
         PyRun_SimpleString(xstr.c_str());
         PyRun_SimpleString("fig, ax = plt.subplots(nrows=1, sharex=True, figsize=(10, 10))");
         PyRun_SimpleString("ax.set_title('placa')");
-        PyRun_SimpleString("im = ax.imshow(x, origin='upper', interpolation='bilinear')");
+        PyRun_SimpleString("im = ax.imshow(x, origin='upper', interpolation='bilinear',cmap='plasma')");
 
         PyRun_SimpleString("divider = make_axes_locatable(ax)");
         PyRun_SimpleString("cax = divider.append_axes('right', size='5%', pad=0.05)");
