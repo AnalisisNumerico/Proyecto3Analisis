@@ -54,4 +54,4 @@ add_executable(Proyecto3Analisis main.cpp)
 target_link_libraries(Proyecto3Analisis
                       anpi
                       python2.7
-        ${Boost_LIBRARIES})
+                      ${Boost_LIBRARIES})

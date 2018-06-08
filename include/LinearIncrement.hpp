@@ -4,21 +4,25 @@
 
 namespace anpi {
 
+  /** funcion utilizada para rellenar un vector con valores que incrementan
+   *  linealmente entre los limites especificados
+   *
+   * @tparam T
+   * @param size tamaño del vector values
+   * @param limitValues vector de tamaño 2, que contiene los valores limites
+   * @param values vector que contiene todos los valores
+   */
   template<typename T>
-  void linearIncrement(T initial, T final, int size, std::vector<T>& values) {
+  void linearIncrement(const int size, const std::vector<T>& limitValues, std::vector<T>& values) {
 
-    T step = (final - initial)/(size - 1);
+    T step = (limitValues[1] - limitValues[0])/(size - 1);
 
-    T value = initial;
+    T value = limitValues[0];
     values.clear();
 
-    while(values.size() < size) {
+    while(int(values.size()) < size) {
       values.push_back(value);
       value += step;
-    }
-
-    for(int i = 0; i < size; i++) {
-      std::cout << values[i] << " ";
     }
 
   }

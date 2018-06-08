@@ -17,6 +17,16 @@ HasType.hpp
 ../include/Aplication.hpp
 Matrix.hpp
 ../include/Matrix.hpp
+omp.h
+../include/omp.h
+PlotPyTNSHA.hpp
+../include/PlotPyTNSHA.hpp
+Spline.hpp
+../include/Spline.hpp
+LinearIncrement.hpp
+../include/LinearIncrement.hpp
+chrono
+-
 
 ../include/Exception.hpp
 exception
@@ -70,6 +80,20 @@ bits/MatrixArithmetic.hpp
 Exception.hpp
 ../include/Exception.hpp
 
+../include/PlotPyTNSHA.hpp
+python2.7/Python.h
+-
+stdlib.h
+-
+string
+-
+vector
+-
+PlotPyTNSHA.tpp
+../include/PlotPyTNSHA.tpp
+
+../include/PlotPyTNSHA.tpp
+
 ../include/Spline.hpp
 Thomas.hpp
 ../include/Thomas.hpp
@@ -95,8 +119,4 @@ iterator
 -
 Aplication.hpp
 /home/jeanpaul/Code/c++/Proyecto3Analisis/src/Aplication.hpp
-Spline.hpp
-/home/jeanpaul/Code/c++/Proyecto3Analisis/src/Spline.hpp
-LinearIncrement.hpp
-/home/jeanpaul/Code/c++/Proyecto3Analisis/src/LinearIncrement.hpp
 

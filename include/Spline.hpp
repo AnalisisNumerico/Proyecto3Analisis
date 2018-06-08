@@ -6,10 +6,18 @@
 
 namespace anpi {
 
+  /** encuentra los valores de x correspondientes a los valores de y dados,
+   *  dado un tamaño maximo de x
+   *
+   * @tparam T
+   * @param xSize
+   * @param yVector
+   * @param xVector
+   */
   template<typename T>
   void xVectorFiller(const int xSize,const std::vector<T>& yVector, std::vector<T>& xVector) {
 
-    T spacing = T(xSize) / T(yVector.size() - 1);///VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV Si hay error verificar aca
+    T spacing = T(xSize) / T(yVector.size() - 1);
 
     T xValue = T(0);
 
@@ -28,18 +36,28 @@ namespace anpi {
     }
   }
 
+  /** Funcion utiliza para rellenar los operandos de la ecuacion Ax = b dados los valores
+   *  de un una funcion en x y y.
+   *
+   * @tparam T
+   * @param xVector
+   * @param yVector
+   * @param A
+   * @param x
+   * @param b
+   */
   template<typename T>
-  void matrixFiller(const std::vector<T>& xVector,
-                    const std::vector<T>& yVector,
-                    Matrix<T>& A,
-                    std::vector<T>& x,
-                    std::vector<T>& b) {
+  void operandFiller(const std::vector<T>& xVector,
+                     const std::vector<T>& yVector,
+                                Matrix<T>&       A,
+                           std::vector<T>&       x,
+                           std::vector<T>&       b) {
 
     int solutionSize = yVector.size() - 2;
 
     A = Matrix<T>(solutionSize, solutionSize);
 
-    if(solutionSize == 3) {
+    if(solutionSize == 1) {
       A[0][0] = 2 * (xVector[2] - xVector[0]);
     }
 
@@ -71,8 +89,18 @@ namespace anpi {
 
   }
 
+  /** metodod utilizado para rellenar un vector con los valores interpolados,
+   * dados un vector con las x, otro con f(x) y otro con f''(x)
+   *
+   * @tparam T
+   * @param xSize size of iterpolatedValues vector
+   * @param xVect vector of x
+   * @param yVect vector of f(x)
+   * @param x     vector of f''(x)
+   * @param interpolatedValues
+   */
   template<typename T>
-  void interpolate(const            int               xSize,
+  void interpolate(const int                          xSize,
                    const std::vector<T>&              xVect,
                    const std::vector<T>&              yVect,
                    const std::vector<T>&                  x,
@@ -82,7 +110,7 @@ namespace anpi {
 
     for(int i = 1; i <= xSize; i++) {
 
-      if(i > xVect[index] && (index + 1) < xVect.size()) {
+      if(i > xVect[index] && (index + 1) < int(xVect.size())) {
         index++;
       }
 
@@ -97,8 +125,8 @@ namespace anpi {
 
   }
 
-    /** funcion utilizada para generar Ax = b si los   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Asegurarse que sea mayor o igual a 3
-     * valores especificados en frontera son 3 o mas
+    /** funcion utilizada para generar Ax = b si los
+     *  valores especificados en frontera son 3 o mas
      *
      * @tparam T
      * @param size
@@ -115,52 +143,12 @@ namespace anpi {
       std::vector<T> x;
       std::vector<T> b;
 
-      matrixFiller(xVector, yVector, A , x , b);
+      operandFiller(xVector, yVector, A , x , b);
 
       thomas(A,x,b);
 
       interpolate(xSize, xVector, yVector, x, interpolatedValues);
 
-
-
-
-/*
- *       U = Matrix<T>(luRows,luCols);
- *
- *     //resistVector.resize(2 * map.rows() * map.cols() - (map.rows() + map.cols()),T(1));
- *
- *
-      std::cout << std::endl<< std::endl;
-
-      std::cout << "x: " << std::endl;
-      for(int i = 0; i < xVector.size(); i++) {
-        std::cout << xVector[i] << " ";
-      }
-
-      std::cout << std::endl<< std::endl;
-
-      std::cout << "y: " << std::endl;
-      for(int i = 0; i < yVector.size(); i++) {
-        std::cout << yVector[i] << " ";
-      }
-
-      std::cout << std::endl << std::endl;
-
-      std::cout << "A: " << std::endl;
-      for(int i = 0; i < solutionSize; i++) {
-        for(int j = 0; j < solutionSize; j++) {
-          std::cout << A[i][j] << " ";
-        }
-        std::cout << std::endl ;
-      }
-
-      std::cout << std::endl;
-
-      std::cout << "b: " << std::endl;
-      for(int i = 0; i < solutionSize; i++) {
-          std::cout << b[i] << std::endl;
-      }
-*/
     }
 
 }//anpi

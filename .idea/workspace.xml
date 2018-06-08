@@ -15,19 +15,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2ad25ba6-e29e-4119-980f-7034086ad013" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/include/LinearIncrement.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/benchmarks/CMakeFiles/benchmark.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/benchmarks/CMakeFiles/benchmark.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/benchmarks/CMakeFiles/benchmark.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/benchmarks/CMakeFiles/benchmark.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/benchmarks/CMakeFiles/benchmark.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/benchmarks/CMakeFiles/benchmark.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/benchmarks/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/benchmarks/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/Proyecto3Analisis.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/Proyecto3Analisis.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/Proyecto3Analisis.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/Proyecto3Analisis.dir/depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/Proyecto3Analisis.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/Proyecto3Analisis.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/Proyecto3Analisis.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/Proyecto3Analisis.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/Proyecto3Analisis.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/Proyecto3Analisis.dir/link.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/Proyecto3Analisis.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/Proyecto3Analisis.dir/main.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/anpi.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/anpi.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/anpi.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/anpi.dir/depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/anpi.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/anpi.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/anpi.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/anpi.dir/flags.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/anpi.dir/main.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/Proyecto3Analisis" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/Proyecto3Analisis" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/cmake_install.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/libanpi.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/libanpi.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/tester.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/tester.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/tester.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/tester.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/tester.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/tester.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/tester.dir/testAllocator.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/tester.dir/testAllocator.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/tester.dir/testMain.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/tester.dir/testMain.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/tester.dir/testMatrix.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/tester.dir/testMatrix.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/tester.dir/testThomas.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/tester.dir/testThomas.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/test/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/test/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/test/tester" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/test/tester" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/Aplication.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/Aplication.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/LinearIncrement.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/LinearIncrement.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/PlotPy.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/PlotPy.tpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/PlotPyTNSHA.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/PlotPyTNSHA.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/PlotPyTNSHA.tpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/PlotPyTNSHA.tpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/Spline.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/Spline.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -41,11 +68,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-641">
-              <caret line="42" column="2" selection-start-line="42" selection-start-column="2" selection-end-line="42" selection-end-column="2" />
+            <state relative-caret-position="162">
+              <caret line="42" column="112" selection-start-line="42" selection-start-column="112" selection-end-line="42" selection-end-column="112" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
               </folding>
@@ -53,15 +80,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Aplication.hpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Aplication.hpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/include/Aplication.hpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1044">
-              <caret line="58" column="7" selection-start-line="58" selection-start-column="7" selection-end-line="58" selection-end-column="7" />
+            <state relative-caret-position="1461">
+              <caret line="189" column="7" selection-start-line="189" selection-start-column="7" selection-end-line="189" selection-end-column="7" />
               <folding>
-                <element signature="e#304#316#0" expanded="true" />
-                <element signature="e#2554#2566#0" expanded="true" />
+                <element signature="e#50#71#0" expanded="true" />
+                <element signature="e#5015#5027#0" expanded="true" />
+                <element signature="e#6525#6537#0" expanded="true" />
+                <element signature="e#7001#7013#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlotPyTNSHA.hpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/PlotPyTNSHA.hpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
             </state>
           </provider>
         </entry>
@@ -71,6 +109,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>[i</find>
+      <find>plate.</find>
+      <find>cout</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -86,17 +126,19 @@
         <option value="$PROJECT_DIR$/benchmarks/benchmarkLU.cpp" />
         <option value="$PROJECT_DIR$/test/testLU.cpp" />
         <option value="$PROJECT_DIR$/test/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/src/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/include/bits/Aplication.hpp" />
         <option value="$PROJECT_DIR$/include/Solver.hpp" />
         <option value="$PROJECT_DIR$/include/spline.hpp" />
         <option value="$PROJECT_DIR$/include/Thomas.hpp" />
         <option value="$PROJECT_DIR$/test/testThomas.cpp" />
-        <option value="$PROJECT_DIR$/include/Spline.hpp" />
         <option value="$PROJECT_DIR$/include/LinearInrement.hpp" />
+        <option value="$PROJECT_DIR$/src/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/include/PlotPyTNSHA.hpp" />
+        <option value="$PROJECT_DIR$/include/PlotPyTNSHA.tpp" />
         <option value="$PROJECT_DIR$/include/LinearIncrement.hpp" />
-        <option value="$PROJECT_DIR$/include/Aplication.hpp" />
+        <option value="$PROJECT_DIR$/include/Spline.hpp" />
         <option value="$PROJECT_DIR$/src/main.cpp" />
+        <option value="$PROJECT_DIR$/include/Aplication.hpp" />
       </list>
     </option>
   </component>
@@ -111,9 +153,10 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="25" />
-    <option name="width" value="683" />
-    <option name="height" value="743" />
+    <option name="x" value="521" />
+    <option name="y" value="27" />
+    <option name="width" value="673" />
+    <option name="height" value="555" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -136,12 +179,12 @@
             <path>
               <item name="Proyecto3Analisis" type="b2602c69:ProjectViewProjectNode" />
               <item name="Proyecto3Analisis" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
+              <item name="cmake" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Proyecto3Analisis" type="b2602c69:ProjectViewProjectNode" />
               <item name="Proyecto3Analisis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Proyecto3Analisis" type="b2602c69:ProjectViewProjectNode" />
@@ -217,28 +260,30 @@
       <workItem from="1527213172964" duration="5358000" />
       <workItem from="1527452137608" duration="31297000" />
       <workItem from="1527863190246" duration="911000" />
-      <workItem from="1528070887259" duration="17066000" />
+      <workItem from="1528070887259" duration="38183000" />
+      <workItem from="1528387351005" duration="3188000" />
+      <workItem from="1528397530189" duration="4067000" />
+      <workItem from="1528414604467" duration="26815000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105339000" />
+    <option name="totallyTimeSpent" value="160526000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="743" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2635432" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2293373" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.5007899" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.5480268" weight="0.5442623" />
       <window_info anchor="bottom" id="CMake" order="11" weight="0.5151515" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.4519732" side_tool="true" weight="0.53114754" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.19589257" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24918033" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4996277" weight="0.3295082" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39968404" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39836067" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -247,26 +292,6 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
-    <layout-to-restore>
-      <window_info anchor="bottom" id="CMake" order="11" weight="0.5151515" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2635432" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.40126383" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39968404" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.6192733" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -280,38 +305,10 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/include/Aplication.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-          <folding>
-            <element signature="e#304#316#0" expanded="true" />
-            <element signature="e#2554#2566#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/Thomas.hpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1134">
           <caret line="63" column="64" selection-start-line="63" selection-start-column="14" selection-end-line="63" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/Spline.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1512">
-          <caret line="84" column="55" selection-start-line="84" selection-start-column="55" selection-end-line="84" selection-end-column="55" />
         </state>
       </provider>
     </entry>
@@ -320,8 +317,10 @@
         <state relative-caret-position="468">
           <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
           <folding>
-            <element signature="e#304#316#0" expanded="true" />
-            <element signature="e#2554#2566#0" expanded="true" />
+            <element signature="e#50#71#0" expanded="true" />
+            <element signature="e#5015#5027#0" expanded="true" />
+            <element signature="e#6525#6537#0" expanded="true" />
+            <element signature="e#7001#7013#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -451,13 +450,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="20" selection-start-column="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/include/boost/align/detail/aligned_alloc_posix.hpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="113">
@@ -474,16 +466,7 @@
         <state relative-caret-position="-1041" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/PlotPyTNSHA.tpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1455" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/PlotPy.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1815" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/include/PlotPy.hpp" />
     <entry file="file://$PROJECT_DIR$/test/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
@@ -495,16 +478,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#168#203#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/Thomas.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1134">
-          <caret line="63" column="64" selection-start-line="63" selection-start-column="14" selection-end-line="63" selection-end-column="64" />
         </state>
       </provider>
     </entry>
@@ -515,38 +488,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/Spline.hpp">
+    <entry file="file://$PROJECT_DIR$/benchmarks/benchmarkMain.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-108" />
+        <state relative-caret-position="488">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/benchmarks/benchmarkFramework.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="187" column="39" lean-forward="true" selection-start-line="187" selection-start-column="10" selection-end-line="187" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/PlotPyTNSHA.tpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="87" column="10" selection-start-line="87" selection-start-column="10" selection-end-line="87" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Thomas.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1134">
+          <caret line="63" column="64" selection-start-line="63" selection-start-column="14" selection-end-line="63" selection-end-column="64" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/LinearIncrement.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        <state relative-caret-position="216">
+          <caret line="12" column="56" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="56" />
           <folding>
-            <element signature="e#88#100#0" expanded="true" />
+            <element signature="e#185#197#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/Aplication.hpp">
+    <entry file="file://$PROJECT_DIR$/include/Spline.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1044">
-          <caret line="58" column="7" selection-start-line="58" selection-start-column="7" selection-end-line="58" selection-end-column="7" />
+        <state relative-caret-position="-2327">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
           <folding>
-            <element signature="e#304#316#0" expanded="true" />
-            <element signature="e#2554#2566#0" expanded="true" />
+            <element signature="e#101#113#0" expanded="true" />
+            <element signature="e#596#608#0" expanded="true" />
+            <element signature="e#1834#1846#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-641">
-          <caret line="42" column="2" selection-start-line="42" selection-start-column="2" selection-end-line="42" selection-end-column="2" />
+        <state relative-caret-position="162">
+          <caret line="42" column="112" selection-start-line="42" selection-start-column="112" selection-end-line="42" selection-end-column="112" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/PlotPyTNSHA.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Aplication.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1461">
+          <caret line="189" column="7" selection-start-line="189" selection-start-column="7" selection-end-line="189" selection-end-column="7" />
+          <folding>
+            <element signature="e#50#71#0" expanded="true" />
+            <element signature="e#5015#5027#0" expanded="true" />
+            <element signature="e#6525#6537#0" expanded="true" />
+            <element signature="e#7001#7013#0" expanded="true" />
           </folding>
         </state>
       </provider>

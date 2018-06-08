@@ -2,8 +2,8 @@
 // Created by ger534 on 27/04/18.
 //
 
-#ifndef PROYECTO2ANALISIS_PLOTPYTNSHA_HPP
-#define PROYECTO2ANALISIS_PLOTPYTNSHA_HPP
+#ifndef PROYECTO3ANALISIS_PLOTPYTNSHA_HPP
+#define PROYECTO3ANALISIS_PLOTPYTNSHA_HPP
 
 #include <python2.7/Python.h>
 #include <stdlib.h>
@@ -50,11 +50,16 @@ namespace anpi {
     void initialize();
 
     /**
-     * Plot a curve by drawing line segments from
-     * the sequence of points (datax[i],datay[i]).  The
-     * curve will have the given legend
+     * Plot the function quiver
      */
-    void plot(std::vector<T>& dataPathx,std::vector<T>& dataPathy,std::vector<T>& datax,std::vector<T>& datay,std::vector<T>& datau,std::vector<T>& datav,std::vector<T>& datap,std::vector<T>& dataq);
+    void quiver(std::vector<T>& datax,std::vector<T>& datay,std::vector<T>& datau,std::vector<T>& datav,std::vector<T>& datap,std::vector<T>& dataq);
+
+    /**
+     * Plot a image using interpolation
+     * the image comes as a matrix
+     */
+    void imgshow(anpi::Matrix<T>&);
+
 
     /**
      * Show all curves plotted so far.
