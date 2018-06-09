@@ -2,8 +2,8 @@
 // Created by ger534 on 27/04/18.
 //
 
-#ifndef PROYECTO3ANALISIS_PLOTPYTNSHA_HPP
-#define PROYECTO3ANALISIS_PLOTPYTNSHA_HPP
+#ifndef PROYECTO2ANALISIS_PLOTPYTNSHA_HPP
+#define PROYECTO2ANALISIS_PLOTPYTNSHA_HPP
 
 #include <python2.7/Python.h>
 #include <stdlib.h>
@@ -52,7 +52,7 @@ namespace anpi {
     /**
      * Plot the function quiver
      */
-    void quiver(std::vector<T>& datax,std::vector<T>& datay,std::vector<T>& datau,std::vector<T>& datav,std::vector<T>& datap,std::vector<T>& dataq);
+    void quiver(std::vector<T>& datax,std::vector<T>& datay,std::vector<T>& datau,std::vector<T>& datav);
 
     /**
      * Plot a image using interpolation

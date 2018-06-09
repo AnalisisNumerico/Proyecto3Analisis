@@ -16,19 +16,17 @@ namespace anpi {
     Py_Initialize();
     PyRun_SimpleString("import matplotlib.pyplot as plt");
     PyRun_SimpleString("import numpy as np");
+    PyRun_SimpleString("from mpl_toolkits.axes_grid1 import make_axes_locatable");
   }
 
   template <typename T>
-  void  PlotTNSHA<T>::quiver(std::vector<T>& datax,std::vector<T>& datay,std::vector<T>& datau,std::vector<T>& datav,std::vector<T>& datap,std::vector<T>& dataq) {
-
+  void  PlotTNSHA<T>::quiver(std::vector<T>& datax,std::vector<T>& datay,std::vector<T>& datau,std::vector<T>& datav) {
 
     // Convert the vectors of data into Python strings
     std::string xstr  = "X = [";
     std::string ystr  = "Y = [";
     std::string ustr  = "U = [";
     std::string vstr  = "V = [";
-    std::string pstr  = "P = [";
-    std::string qstr  = "Q = [";
 
     char c=',';
     for(size_t i = 0; i < datax.size(); i++) {
@@ -49,25 +47,12 @@ namespace anpi {
 
    }
    c=',';
-      for(size_t i = 0; i < datap.size(); i++) {
-               if (i == datap.size()-1) {
-                 c=']';
-               }
-         pstr.append(std::to_string(datap[i])   + c);
-         qstr.append(std::to_string(dataq[i])   + c);
-
-      }
-    c=',';
 
     PyRun_SimpleString(xstr.c_str());
     PyRun_SimpleString(ystr.c_str());
     PyRun_SimpleString(ustr.c_str());
     PyRun_SimpleString(vstr.c_str());
-    PyRun_SimpleString(pstr.c_str());
-    PyRun_SimpleString(qstr.c_str());
-    PyRun_SimpleString("M = np.hypot(U, V)");
-    PyRun_SimpleString("ax.quiver(X, Y, U, V,M)");
-    PyRun_SimpleString("plt.plot(P,Q,'ro')");
+    PyRun_SimpleString("ax.quiver(X, Y, U, V)");
 }
   template <typename T>
   void PlotTNSHA<T>::imgshow(anpi::Matrix<T>& image){
@@ -85,13 +70,15 @@ namespace anpi {
                c=",";
             }
         }
-        //std::cout << xstr << std::endl;
         PyRun_SimpleString(xstr.c_str());
         PyRun_SimpleString("fig, ax = plt.subplots(nrows=1, sharex=True, figsize=(10, 10))");
         PyRun_SimpleString("ax.set_title('placa')");
-        ///TODO origin can be important, see it with JP
-        PyRun_SimpleString("ax.imshow(x, origin='upper', interpolation='bilinear')");
-        //PyRun_SimpleString("plt.plot(P,Q,'ro')");
+        PyRun_SimpleString("im = ax.imshow(x, origin='upper', interpolation='bilinear',cmap='plasma')");
+
+        PyRun_SimpleString("divider = make_axes_locatable(ax)");
+        PyRun_SimpleString("cax = divider.append_axes('right', size='5%', pad=0.05)");
+        PyRun_SimpleString("plt.colorbar(im, cax=cax)");
+
 
   }
 

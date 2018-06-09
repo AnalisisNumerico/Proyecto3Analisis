@@ -173,86 +173,115 @@ namespace anpi {
 
       }
 
-///VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV   PRINT
-/*    for(int i = 0; i < int( plate.rows()); i++) {
-      for(int j = 0; j < int(plate.cols()); j++) {
-        std::cout << plate[i][j] << " ";
-      }
-      std::cout << std::endl;
-    }*/
-///AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA   PRINT
-
     }
 
   }
 
   template<typename T>
-  void flow( const int               horizontal ,
-             const int                 vertical ,
-             const std::vector<T>&    topBorder ,
-             const std::vector<T>&   leftBorder ,
-             const std::vector<T>&  rightBorder ,
-             const std::vector<T>& bottomBorder ,
-             const      Matrix<T>&        plate ) {
+  void flow( const int                  horizontal ,
+             const int                    vertical ,
+             const std::vector<T>&       topBorder ,
+             const std::vector<T>&      leftBorder ,
+             const std::vector<T>&     rightBorder ,
+             const std::vector<T>&    bottomBorder ,
+             const      Matrix<T>&           plate ,
+             const              T                k ,
+             const            int             grid ,
+                   std::vector<T>& xPositionVector ,
+                   std::vector<T>& yPositionVector ,
+                   std::vector<T>&     xFlowVector ,
+                   std::vector<T>&     yFlowVector ) {
 
-    std::vector<T> xPositionVector;
-    std::vector<T> yPositionVector;
-    std::vector<T> xTempVector;
-    std::vector<T> yTempVector;
-    std::vector<T> xFlowVector;
-    std::vector<T> yFlowVector;
-
-    T k = 2.37; //conductividad termica del aluminio
+    T top;
+    T bottom;
+    T left;
+    T right;
 
     for(int i = 0; i < vertical; i++) {
       for(int j = 0; j < horizontal; j++) {
 
-        T top;
-
         if (i - 1 < 0) {
-          top = topBorder[j];
-        } else {
+          if (topBorder.size() <= 0) {
+            top = T(0);
+            bottom = 2 * plate[i + 1][j];
+          }
+          else {
+            top = topBorder[j];
+            bottom = plate[i + 1][j];
+          }
+        }
+        else if (i + 1 >= vertical) {
+          if (bottomBorder.size() <= 0) {
+            top = 2 * plate[i - 1][j];
+            bottom = T(0);
+          }
+          else {
+            top = plate[i - 1][j];
+            bottom = bottomBorder[j];
+          }
+        }
+        else  {
           top = plate[i - 1][j];
-        }
-
-        T left;
-
-        if (j - 1 < 0) {
-          left = leftBorder[i];
-        } else {
-          left = plate[i][j - 1];
-        }
-
-        T right;
-
-        if (j + 1 >= int(plate.cols())) {
-          right = rightBorder[i];
-        } else {
-          right = plate[i][j + 1];
-        }
-
-        T bottom;
-
-        if (i + 1 >= int(plate.rows())) {
-          bottom = bottomBorder[j];
-        } else {
           bottom = plate[i + 1][j];
         }
 
-        xPositionVector.push_back(j);
-        yPositionVector.push_back(i);
-        xTempVector.push_back(plate[i][j]);
-        yTempVector.push_back(plate[i][j]);
-        xFlowVector.push_back(-k * ((right - left) / 2));
-        yFlowVector.push_back(-k * ((bottom - top) / 2));
+        if (j - 1 < 0) {
+          if (leftBorder.size() <= 0) {
+            left = T(0);
+            right = 2 * plate[i][j + 1];
+          }
+          else {
+            left = leftBorder[i];
+            right = plate[i][j + 1];
+          }
+        }
+        else if (j + 1 >= horizontal) {
+          if(rightBorder.size() <= 0) {
+            left  = 2 * plate[i][j - 1];
+            right = T(0);
+          }
+          else {
+            left  = plate[i][j - 1];
+            right = rightBorder[i];
+          }
+        }
+        else {
+          left  = plate[i][j - 1];
+          right = plate[i][j + 1];
+        }
+
+        if(i != 0 && j != 0 && i % grid == 0 && j % grid == 0) {
+          xPositionVector.push_back(j);
+          yPositionVector.push_back(i);
+          xFlowVector.push_back(k * ((left - right) / (2 * grid)));
+          yFlowVector.push_back(k * ((bottom - top) / (2 * grid)));
+        }
 
       }
     }
 
-    anpi::PlotTNSHA<T> plotter;
-    plotter.initialize();
-    plotter.quiver(xPositionVector, yPositionVector, xTempVector, yTempVector, xFlowVector, yFlowVector);
-    plotter.show();
+    // normalizacion x
+
+    T biggerValue = T(0);
+    T x, y, tmpValue;
+
+    for(int i = 0; i < int(xFlowVector.size()); i++) {//encuentra el valor mayor
+        x = xFlowVector[i];
+        y = yFlowVector[i];
+        tmpValue = std::sqrt(x * x + y * y);
+        if(tmpValue > biggerValue) {
+          biggerValue = tmpValue;
+        }
+    }
+
+    T value;
+
+    for(int i = 0; i < int(xFlowVector.size()); i++) {//divide todos los valores entre el valor mayor
+      value = xFlowVector[i] / biggerValue;
+      xFlowVector[i] = value;
+      value = yFlowVector[i] / biggerValue;
+      yFlowVector[i] = value;
+    }
 
   }
 
@@ -302,6 +331,9 @@ namespace anpi {
                   const std::vector<T>&   leftBorderTemperature ,
                   const std::vector<T>&  rightBorderTemperature ,
                   const std::vector<T>& bottomBorderTemperature ,
+                  const           bool                     flow ,
+                  const         double                        k ,
+                  const            int                     grid ,
                   const           bool               graphicate ) {
 
     std::vector<T>    topBorderValues;
@@ -328,10 +360,34 @@ namespace anpi {
     std::chrono::duration<T> durat = std::chrono::high_resolution_clock::now()-_start;
     std::cout << "plate temperatures calculated in: "<< durat.count() << " seconds \n";
 
+    std::vector<T> xPositionVector;
+    std::vector<T> yPositionVector;
+    std::vector<T>     xFlowVector;
+    std::vector<T>     yFlowVector;
+
+    if(flow) {
+      anpi::flow<T>(horizontal,
+                    vertical,
+                    topBorderValues,
+                    bottomBorderValues,
+                    leftBorderValues,
+                    rightBorderValues,
+                    plate,
+                    k,
+                    grid,
+                    xPositionVector,
+                    yPositionVector,
+                    xFlowVector,
+                    yFlowVector);
+    }
+
     if(graphicate) {
       anpi::PlotTNSHA<T> plotter;
       plotter.initialize();
       plotter.imgshow(plate);
+      if (flow) {
+        plotter.quiver(xPositionVector, yPositionVector, xFlowVector, yFlowVector);
+      }
       plotter.show();
     }
   }

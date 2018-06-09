@@ -10,40 +10,24 @@ namespace {
 } // namespace
 
 int main(int argc, char* argv[]) {
+
 /*
-  std::vector <double>    topBorder;
-  int plateBorderSize = 100;
-  std::vector<double> temperatures = {200,20,100,0};
-  anpi::spline<double>(plateBorderSize, temperatures, topBorder);
-
-  for(int i = 0; i < topBorder.size(); i++) {
-    std::cout << topBorder[i] << " ";
-  }
-*/
-
   double lambda = double(2);
 
   std::vector <double>    topBorder;
-  std::vector <double>   leftBorder(100, -100);
-  std::vector <double>  rightBorder(100,  300);
-  std::vector <double> bottomBorder(100,   50);
+  std::vector <double>   leftBorder;
+  std::vector <double>  rightBorder;
+  std::vector <double> bottomBorder;
 
   int plateBorderSize = 100;
-  std::vector<double> temperatures = {50,1000,0,100,2000,28};
+  std::vector<double> temperatures = {50,100,0,100,200,28};
   anpi::spline<double>(plateBorderSize, temperatures, topBorder);
-
-  bool top    = false;
-  bool left   = false;
-  bool right  = false;
-  bool bottom = false;
 
   anpi::Matrix<double> plate;
 
   anpi::heat<double>(plateBorderSize, plateBorderSize, lambda, topBorder, leftBorder, rightBorder, bottomBorder, plate);
   anpi::flow<double>(plateBorderSize, plateBorderSize, topBorder, leftBorder, rightBorder, bottomBorder, plate);
-
-
-
+*/
  /*
 
   std::vector<float> border;
@@ -56,7 +40,7 @@ int main(int argc, char* argv[]) {
 
   std::cout << std::endl;
 */
-/*
+
   try  {
 
     std::vector<double> topBorderTemperature;
@@ -69,8 +53,12 @@ int main(int argc, char* argv[]) {
     int horizontal;
     int vertical;
 
+    double k;
+    int grid;
+
+    bool flow = false;
+
     bool graphication = true;
-    int grid = 0;
 
     // Define and parse the program options
     namespace po = boost::program_options;
@@ -84,9 +72,10 @@ int main(int argc, char* argv[]) {
         //(",p", po::value<std::string>(&path), "Path of the thermic profile txt") // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<ver lo del archivo
         (",h", po::value<int>(&horizontal) -> required(),   "Number of horizontal pixels of the solution")
         (",v", po::value<int>(&vertical)   -> required(),   "Number of vertical pixels of the solution")
+        (",k", po::value<double>(&k), "Termic difusive coeficient, if specified enable heat flow calculation")
+        (",g", po::value<int>(&grid) -> default_value(5), "Specifies the grid size of the heat visualization")
         (",q", "Deacivates the graphing of the solution")
-        (",f", po::value<int>(&grid), "If specified enable heat flow visualization and especifies the grid size")
-     ;
+    ;
 
     po::variables_map vm;
 
@@ -113,8 +102,13 @@ int main(int argc, char* argv[]) {
       std::cout << "graphing deactivated" << std::endl;
     }
 
+    if ( vm.count("-k") ) {
+      flow = true;
+    }
+
     anpi::aplication<double>(horizontal, vertical,
                              topBorderTemperature, leftBorderTemperature, rightBorderTemperature, bottomBorderTemperature,
+                             flow, k, grid,
                              graphication);
 
   }
@@ -126,5 +120,5 @@ int main(int argc, char* argv[]) {
   }
 
  return SUCCESS;
-*/
+
 } // main
